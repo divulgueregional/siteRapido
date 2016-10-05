@@ -5,15 +5,15 @@ define('BASE', INICIO); //Url rais do site
 
 /* BANCO DE DADOS */
 if(AMBIENTE == 'local'):
-    define('SIS_DB_HOST', 'localhost'); //Link do banco de dados
-    define('SIS_DB_USER', 'root'); //Usuário do banco de dados
-    define('SIS_DB_PASS', ''); //Senha  do banco de dados
-    define('SIS_DB_DBSA', 'divulgue_region'); //Nome  do banco de dados
+    define('HOST', 'localhost'); //Link do banco de dados local
+    define('USUARIO', 'root'); //Usuário do banco de dados local
+    define('SENHA', ''); //Senha  do banco de dados local
+    define('BANCO', 'divulgue_region'); //Nome  do banco de dados local
 else:
-    define('SIS_DB_HOST', 'localhost'); //Link do banco de dados
-    define('SIS_DB_USER', 'divulgue_user'); //Usuário do banco de dados
-    define('SIS_DB_PASS', '86oj34WHgg'); //Senha  do banco de dados
-    define('SIS_DB_DBSA', 'divulgue_divulgueregion'); //Nome  do banco de dados
+    define('HOST', 'localhost'); //Link do banco de dados servidor
+    define('USUARIO', ''); //Usuário do banco de dados servidor
+    define('SENHA', ''); //Senha  do banco de dados servidor
+    define('BANCO', ''); //Nome  do banco de dados servidor
 endif;
 
 /* AUTO LOAD DE CLASSES */
